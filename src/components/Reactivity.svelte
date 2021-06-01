@@ -40,6 +40,12 @@
             alert('please add some product in cart')
         }
     }
+    
+    function remove(index){
+        let temp = purchaseProducts.splice(index, 1);
+        console.log(temp);
+        purchaseProducts = purchaseProducts;
+    }
 
     // $: console.log(purchaseProducts)
 </script>
@@ -60,14 +66,14 @@
         </div>
     <div class="col">
         <h2>Purchase Products</h2>
-        {#each purchaseProducts as product}
+        {#each purchaseProducts as product, index}
         <div class="product">
             <img src="{product.image}" alt="" width='150'>
             <div>
                 <h4>Name: {product.name}</h4>
                 <h4>Price: {product.price}</h4>
                 <h4>Quantity: {product.quantity}</h4>
-                
+                <button on:click="{() => remove(index)}">Remove</button>
             </div>
         </div>
         {/each}

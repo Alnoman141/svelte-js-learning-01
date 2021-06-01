@@ -1,11 +1,13 @@
 <script>
 	import Variables from './components/Variables.svelte';
 	import Reactivity from './components/Reactivity.svelte';
+	import PropComponent from './components/PropComponent.svelte';
 </script>
 
 <main>
 	<!-- <Variables /> -->
-	<Reactivity />
+	<!-- <Reactivity /> -->
+	<PropComponent />
 </main>
 
 <style>
