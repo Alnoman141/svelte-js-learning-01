@@ -2,12 +2,14 @@
 	import Variables from './components/Variables.svelte';
 	import Reactivity from './components/Reactivity.svelte';
 	import PropComponent from './components/PropComponent.svelte';
+	import Logic from './components/Logic.svelte';
 </script>
 
 <main>
 	<!-- <Variables /> -->
 	<!-- <Reactivity /> -->
-	<PropComponent />
+	<!-- <PropComponent /> -->
+	<Logic />
 </main>
 
 <style>
