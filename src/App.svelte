@@ -2,6 +2,7 @@
 	import Variables from './components/Variables.svelte';
 	import Reactivity from './components/Reactivity.svelte';
 	import PropComponent from './components/PropComponent.svelte';
+	import AwaitBlock from './components/AwaitBlock.svelte';
 	import Logic from './components/Logic.svelte';
 </script>
 
@@ -9,7 +10,8 @@
 	<!-- <Variables /> -->
 	<!-- <Reactivity /> -->
 	<!-- <PropComponent /> -->
-	<Logic />
+	<!-- <Logic /> -->
+	<AwaitBlock />
 </main>
 
 <style>
